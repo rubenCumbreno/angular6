@@ -1,0 +1,15 @@
+Bucles y condicionales
+<ul>
+  <li *ngFor="let user of users">{{user}}</li>
+  <!-- <li *ngFor="let user of users">Aqui puedo meter un componente a recorrer</li> -->
+  <li *ngIf="activated">Estoy ON</li>
+  <li *ngIf="!activated">Estoy OFF</li>
+</ul>
+
+
+Creando user como componente
+<ul>
+  <li *ngFor="let user of users">
+    <app-user [nameUser]="user"></app-user>
+  </li>
+</ul>
